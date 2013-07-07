@@ -33,3 +33,4 @@ main = do
              ]
   doctest $ "src/cabal2nix.hs" : libs
   doctest $ "src/hackage4nix.hs" : libs
+  doctest $ "src/pkglist.hs" : libs
