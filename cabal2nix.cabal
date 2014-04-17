@@ -97,11 +97,12 @@ Executable hackage4nix
                         Distribution.NixOS.PrettyPrinting
                         Distribution.NixOS.Regex
 
-Executable pkglist
-  main-is:              pkglist.hs
+Executable hackage2nix
+  main-is:              hackage2nix.hs
   hs-source-dirs:       src
-  Build-Depends:        base >= 3 && < 5, regex-posix, pretty, Cabal >= 1.10,
-                        filepath, directory, process, HTTP, hackage-db
+  Build-Depends:        base >= 3 && < 5, regex-posix, pretty, Cabal >= 1.16,
+                        mtl, containers, directory, filepath, hackage-db, optparse-applicative,
+                        IfElse
   Extensions:           PatternGuards, RecordWildCards, CPP
   Ghc-Options:          -Wall
   other-modules:        Cabal2Nix.CorePackages
