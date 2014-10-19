@@ -87,7 +87,7 @@ Executable hackage2nix
   other-modules:        Cabal2Nix.CorePackages
                         Cabal2Nix.Flags
                         Cabal2Nix.Generate
-                        Cabal2Nix.Hackage
+                        Cabal2Nix.Package
                         Cabal2Nix.License
                         Cabal2Nix.Name
                         Cabal2Nix.Normalize
